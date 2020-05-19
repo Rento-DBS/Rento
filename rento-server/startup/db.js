@@ -2,7 +2,7 @@ const msssql = require("mssql");
 
 const config = {
     user: "SA",
-    password: "Cromastone7",
+    password: "Rento280101",
     server: "localhost",
     database: "TutorialDB",
     options: {
