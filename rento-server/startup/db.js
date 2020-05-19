@@ -4,7 +4,7 @@ const config = {
     user: "SA",
     password: "Rento280101",
     server: "localhost",
-    database: "TutorialDB",
+    database: "RentoDB",
     options: {
         enableArithAbort: true,
     },

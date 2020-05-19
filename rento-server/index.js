@@ -10,7 +10,7 @@ app.use(express.static("public"));
 
 app.get("/", async (req, res) => {
     try {
-        const result = await db.executeQuery("SELECT * FROM Employees");
+        const result = await db.executeQuery("SELECT * FROM Car");
         res.send(result.data);
     } catch (err) {
         console.log(err);
