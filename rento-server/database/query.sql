@@ -44,8 +44,7 @@
 --     ADD CarImage /*new_column_name*/ image /*new_column_datatype*/
 -- GO
 
--- Insert
--- into table 'Car'
+-- Insert into table 'Car'
 -- INSERT INTO Car
 -- VALUES
 --     ( -- first row: values for the columns in the list above
@@ -69,12 +68,4 @@
 -- -- add more rows here
 -- GO
 
-SELECT * FROM Car
-GO
 
--- azure
--- rentoadmin
--- Rento280101
-
--- connnection string 
--- Server=tcp:rento.database.windows.net,1433;Initial Catalog=rento;Persist Security Info=False;User ID=rentoadmin;Password={your_password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;

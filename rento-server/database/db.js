@@ -47,3 +47,14 @@ async function executeQuery(query) {
 }
 
 module.exports = { executeQuery };
+
+
+
+
+
+//azure
+//rentoadmin
+//Rento280101
+
+//connnection string 
+//Server=tcp:rento.database.windows.net,1433;Initial Catalog=rento;Persist Security Info=False;User ID=rentoadmin;Password={your_password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
