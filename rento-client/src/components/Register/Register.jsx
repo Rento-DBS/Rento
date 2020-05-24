@@ -23,6 +23,7 @@ function Register() {
                     style={{
                         fontSize: 32,
                         height: 80,
+                        
                     }}
                 >
                     Register
@@ -32,6 +33,8 @@ function Register() {
                         id='outlined-basic'
                         label='Email'
                         variant='outlined'
+                        
+                        
                     />
                     <TextField
                         id='outlined-basic'
