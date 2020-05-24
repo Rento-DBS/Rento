@@ -1,22 +1,35 @@
 import React, { useState } from "react";
-import TextField from "@material-ui/core/TextField";
-import Button from "@material-ui/core/Button";
-import { Paper } from "@material-ui/core";
-import { blue } from "@material-ui/core/colors";
+import { Button, TextField, withStyles} from "@material-ui/core/";
+import styles from "./Register.module.css";
 
-function Register() {
-    const styles = {
-        width: 300,
-        lineHeight: 4,
-        position: "absolute",
-        top: "20%",
-        right: "30%",
-    };
+const InputField = withStyles({
+    root: {
+      '& label.Mui-focused': {
+        color: 'rgb(28, 194, 16)',
+      },
+      '& .MuiInput-underline:after': {
+        borderBottomColor: 'rgb(28, 194, 16)',
+      },
+      '& .MuiOutlinedInput-root': {
+        '& fieldset': {
+          borderColor: 'rgb(28, 194, 16)',
+        },
+        '&:hover fieldset': {
+          borderColor: 'rgb(28, 194, 16)',
+        },
+        '&.Mui-focused fieldset': {
+          borderColor: 'rgb(28, 194, 16)',
+        },
+      },
+    },
+  })(TextField);
 
-    // const classes = useStyles();
+
+function Login() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     return (
+<<<<<<< HEAD
         <div style={styles}>
             <Paper style={{ height: 350, backgroundColor: blue }} elevation={3}>
                 <h1
@@ -52,7 +65,15 @@ function Register() {
                 </form>
             </Paper>
         </div>
+=======
+        <form className={styles.container}>
+            <h1 className={styles.heading}>Register</h1>
+            <InputField name="email" type="email" className={styles.textfield} required label="Email ID" variant="outlined"  />
+            <InputField name="password" type="password" className={styles.textfield} required label="Password" variant="outlined" />
+            <Button className={styles.button} variant="outlined" >Register</Button>
+        </form>
+>>>>>>> 7119fa51be9403be49cbc68426224e59ce5fccca
     );
 }
 
-export default Register;
+export default Login;

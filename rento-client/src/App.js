@@ -1,13 +1,15 @@
 import React from "react";
-import "./App.module.css";
-import { Link } from "react-router-dom";
+import styles from "./App.module.css";
 import Login from "./components/Login/Login";
 import Register from "./components/Register/Register";
 
 function App() {
     return (
         <div className='App'>
-            <Login />
+            <div className={styles.container} >
+                <Login/>
+                <Register />
+            </div>
         </div>
     );
 }

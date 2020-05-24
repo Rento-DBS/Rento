@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const app = express();
-const db = require("./startup/db");
+const db = require("./database/db");
 
 app.use(cors());
 app.use(express.json());

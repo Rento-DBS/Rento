@@ -24,7 +24,7 @@
 -- IF OBJECT_ID('dbo.CarType', 'U') IS NOT NULL
 -- DROP TABLE dbo.CarType
 -- GO
--- -- Create the table in the specified schema
+-- Create the table in the specified schema
 -- CREATE TABLE dbo.CarType
 -- (
 --     CarId INT NOT NULL PRIMARY KEY, -- primary key column
@@ -44,8 +44,7 @@
 --     ADD CarImage /*new_column_name*/ image /*new_column_datatype*/
 -- GO
 
--- Insert
--- into table 'Car'
+-- Insert into table 'Car'
 -- INSERT INTO Car
 -- VALUES
 --     ( -- first row: values for the columns in the list above
@@ -69,5 +68,6 @@
 -- -- add more rows here
 -- GO
 
--- SELECT * FROM Car
--- GO
+
+
+

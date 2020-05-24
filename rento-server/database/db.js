@@ -1,10 +1,20 @@
 const msssql = require("mssql");
 
+// const config = {
+//     user: "SA",
+//     password: "Rento280101",
+//     server: "localhost",
+//     database: "RentoDB",
+//     options: {
+//         enableArithAbort: true,
+//     },
+// };
+
 const config = {
-    user: "SA",
+    user: "rentoadmin",
     password: "Rento280101",
-    server: "localhost",
-    database: "RentoDB",
+    server: "rento.database.windows.net",
+    database: "rento",
     options: {
         enableArithAbort: true,
     },
@@ -37,3 +47,14 @@ async function executeQuery(query) {
 }
 
 module.exports = { executeQuery };
+
+
+
+
+
+//azure
+//rentoadmin
+//Rento280101
+
+//connnection string 
+//Server=tcp:rento.database.windows.net,1433;Initial Catalog=rento;Persist Security Info=False;User ID=rentoadmin;Password={your_password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
