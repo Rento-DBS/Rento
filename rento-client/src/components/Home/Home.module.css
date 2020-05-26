@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.heading {
+    font-size: 72px;
+    font-family: Montserrat, sans-serif;
+    font-weight: normal;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+
+.subheading {
+    color: rgb(28, 194, 16) !important;
+}
+
+.person {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: rgb(194, 196, 196);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.personIcon {
+    height: 50px !important;
+    width: 50px !important;
+    display: inline-block !important;
+    position: relative !important;
+    top: 15% !important;
+}
+
+.button {
+    width: 300px !important;
+    height: 75px !important;
+    background-color: rgb(28, 194, 16) !important;
+    font-family: Helvetica, sans-serif !important;
+    color: white !important;
+    font-size: 24px !important;
+    position: absolute !important;
+    left: 40% !important;
+    top: 40%;
+}
