@@ -30,6 +30,35 @@ const InputField = withStyles({
 const Login = (props) => {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
+<<<<<<< HEAD
+=======
+    // const [errors, setErrors] = useState({});
+
+    // const schema = {
+    //     username: Joi.string().required().label("Username"),
+    //     password: Joi.string().required().label("Password"),
+    // };
+
+    // const validate = () => {
+    //     const options = { abortEarly: false };
+    //     const result = Joi.validate({ username, password }, schema, options); //validate returns an
+    //     if (!result.error) return null;
+
+    //     const errors = {};
+    //     for (let item of result.error.details)
+    //         errors[item.path[0]] = item.message;
+    //     return errors; //map an array into an object
+    // };
+
+    //validate each input
+    // const validateProperty = ({ name, value }) => {
+    //     // console.log(`validated${name}: ${value}`);
+    //     const obj = { [name]: value }; //whatever name is at runtime that will be set to value
+    //     const schema = { [name]: schema[name] };
+    //     const { error } = Joi.validate(obj, schema); //we need this to abort early. pick the error property of the return value
+    //     return error ? error.details[0].message : null;
+    // };
+>>>>>>> added features to karan branch
 
     const handleSubmit = (e) => {
         console.log("logging in..");
@@ -55,6 +84,13 @@ const Login = (props) => {
         setPassword(e.currentTarget.value);
         // setErrors();
     };
+<<<<<<< HEAD
+=======
+
+    // const doSubmit = async () => {
+
+    // };
+>>>>>>> added features to karan branch
     return (
         <form className={styles.container} onSubmit={handleSubmit}>
             <h1 className={styles.heading}>Login</h1>
