@@ -5,18 +5,6 @@ import styles from "./Login.module.css";
 import auth from "../../services/authService";
 // import { Redirect } from "react-router-dom";
 
-<<<<<<< HEAD
-
-// const useStyles = makeStyles((theme) => ({
-//     root: {
-//         "& > *": {
-//             margin: theme.spacing(2),
-//             width: "25ch",
-//             display: "block",
-//         },
-//     },
-// }));
-=======
 const InputField = withStyles({
     root: {
         "& label.Mui-focused": {
@@ -37,17 +25,11 @@ const InputField = withStyles({
             },
         },
     },
-<<<<<<< HEAD
 })(TextField);
-=======
-  })(TextField);
->>>>>>> 7119fa51be9403be49cbc68426224e59ce5fccca
->>>>>>> 7d36855e5a34b38e037d09b8f04a89e43794755e
 
 const Login = (props) => {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
-<<<<<<< HEAD
     // const [errors, setErrors] = useState({});
 
     // const schema = {
@@ -121,30 +103,6 @@ const Login = (props) => {
     // const doSubmit = async () => {
 
     // };
-
-=======
-<<<<<<< HEAD
-    return (<>
-    <h1>Login Page</h1>
-        
-        <form action="/login" method='POST'>
-        
-        
-        <div>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required/>
-        </div>
-        
-        <div>
-            <label for="password">password</label>
-            <input type="password" id="password" name="password" required/>
-        </div>
-        <button type="submit">Login</button>
-        </form>
-        <a href="../Register/Register">Register</a>
-    </>);
-=======
->>>>>>> 7d36855e5a34b38e037d09b8f04a89e43794755e
     return (
         <form className={styles.container} onSubmit={handleSubmit}>
             <h1 className={styles.heading}>Login</h1>
@@ -171,11 +129,6 @@ const Login = (props) => {
             <Button className={styles.button}>Login</Button>
         </form>
     );
-<<<<<<< HEAD
 };
-=======
->>>>>>> 7119fa51be9403be49cbc68426224e59ce5fccca
-}
->>>>>>> 7d36855e5a34b38e037d09b8f04a89e43794755e
 
 export default Login;
