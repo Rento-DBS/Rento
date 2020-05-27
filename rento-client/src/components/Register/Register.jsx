@@ -29,12 +29,50 @@ function Login() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     return (
+<<<<<<< HEAD
+        <div style={styles}>
+            <Paper style={{ height: 350, backgroundColor: blue }} elevation={3}>
+                <h1
+                    style={{
+                        fontSize: 32,
+                        height: 80,
+                        
+                    }}
+                >
+                    Register
+                </h1>
+                <form>
+                    <TextField
+                        id='outlined-basic'
+                        label='Email'
+                        variant='outlined'
+                        
+                        
+                    />
+                    <TextField
+                        id='outlined-basic'
+                        label='Password'
+                        variant='outlined'
+                    />
+                    <Button
+                        style={{ width: 100 }}
+                        variant='outlined'
+                        color='primary'
+                        fullWidth={false}
+                    >
+                        Register
+                    </Button>
+                </form>
+            </Paper>
+        </div>
+=======
         <form className={styles.container}>
             <h1 className={styles.heading}>Register</h1>
             <InputField name="email" type="email" className={styles.textfield} required label="Email ID" variant="outlined"  />
             <InputField name="password" type="password" className={styles.textfield} required label="Password" variant="outlined" />
             <Button className={styles.button} variant="outlined" >Register</Button>
         </form>
+>>>>>>> 7119fa51be9403be49cbc68426224e59ce5fccca
     );
 }
 
