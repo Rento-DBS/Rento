@@ -5,18 +5,6 @@ import styles from "./Login.module.css";
 import auth from "../../services/authService";
 // import { Redirect } from "react-router-dom";
 
-<<<<<<< HEAD
-
-// const useStyles = makeStyles((theme) => ({
-//     root: {
-//         "& > *": {
-//             margin: theme.spacing(2),
-//             width: "25ch",
-//             display: "block",
-//         },
-//     },
-// }));
-=======
 const InputField = withStyles({
     root: {
         "& label.Mui-focused": {
@@ -37,56 +25,17 @@ const InputField = withStyles({
             },
         },
     },
-<<<<<<< HEAD
 })(TextField);
-=======
-  })(TextField);
->>>>>>> 7119fa51be9403be49cbc68426224e59ce5fccca
->>>>>>> 7d36855e5a34b38e037d09b8f04a89e43794755e
 
 const Login = (props) => {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
-<<<<<<< HEAD
-    // const [errors, setErrors] = useState({});
-
-    // const schema = {
-    //     username: Joi.string().required().label("Username"),
-    //     password: Joi.string().required().label("Password"),
-    // };
-
-    // const validate = () => {
-    //     const options = { abortEarly: false };
-    //     const result = Joi.validate({ username, password }, schema, options); //validate returns an
-    //     if (!result.error) return null;
-
-    //     const errors = {};
-    //     for (let item of result.error.details)
-    //         errors[item.path[0]] = item.message;
-    //     return errors; //map an array into an object
-    // };
-
-    //validate each input
-    // const validateProperty = ({ name, value }) => {
-    //     // console.log(`validated${name}: ${value}`);
-    //     const obj = { [name]: value }; //whatever name is at runtime that will be set to value
-    //     const schema = { [name]: schema[name] };
-    //     const { error } = Joi.validate(obj, schema); //we need this to abort early. pick the error property of the return value
-    //     return error ? error.details[0].message : null;
-    // };
 
     const handleSubmit = (e) => {
-        // e.preventDefault(); //does not reload the form
-        // const errors = validate();
-        // setErrors(errors || {}); //if errors exists then errors else empty object. Do not keep it null. will give error
-        // if (errors) return;
         console.log("logging in..");
         try {
             auth.login(username, password);
-            // this.props.history.push("/"); //direct the user to the home page after logging in
-            //do a full reload when the user logs in
             const { state } = props.location;
-            //if there was an existing state go to that state's path else go to home
             window.location = state ? state.from.pathname : "/";
             console.log("Logged in");
         } catch (ex) {
@@ -97,54 +46,15 @@ const Login = (props) => {
     };
 
     const handlePassword = (e) => {
-        // //input is e.currentTarget
-        // const errors = errors;
-        // const errorMessage = validateProperty(input);
-        // if (errorMessage) errors[input.name] = errorMessage;
-        // else delete errors[input.name];
         setUsername(e.currentTarget.value);
         setPassword(e.currentTarget.value);
-        // setErrors();
     };
 
     const handleUsername = (e) => {
-        // //input is e.currentTarget
-        // const errors = errors;
-        // const errorMessage = validateProperty(input);
-        // if (errorMessage) errors[input.name] = errorMessage;
-        // else delete errors[input.name];
         setUsername(e.currentTarget.value);
         setPassword(e.currentTarget.value);
         // setErrors();
     };
-
-    // const doSubmit = async () => {
-
-    // };
-
-=======
-<<<<<<< HEAD
-    return (<>
-    <h1>Login Page</h1>
-        
-        <form action="/login" method='POST'>
-        
-        
-        <div>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required/>
-        </div>
-        
-        <div>
-            <label for="password">password</label>
-            <input type="password" id="password" name="password" required/>
-        </div>
-        <button type="submit">Login</button>
-        </form>
-        <a href="../Register/Register">Register</a>
-    </>);
-=======
->>>>>>> 7d36855e5a34b38e037d09b8f04a89e43794755e
     return (
         <form className={styles.container} onSubmit={handleSubmit}>
             <h1 className={styles.heading}>Login</h1>
@@ -171,11 +81,6 @@ const Login = (props) => {
             <Button className={styles.button}>Login</Button>
         </form>
     );
-<<<<<<< HEAD
 };
-=======
->>>>>>> 7119fa51be9403be49cbc68426224e59ce5fccca
-}
->>>>>>> 7d36855e5a34b38e037d09b8f04a89e43794755e
 
 export default Login;
