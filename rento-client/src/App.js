@@ -1,14 +1,21 @@
-import React from "react";
-// import styles from "./App.module.css";
+import React, { Component } from "react";
+import { Route, Redirect, Switch } from "react-router-dom";
 import Home from "./components/Home/Home";
-function App() {
-    return (
-        <div className="App">
-            {/* <div className={styles.container}> */}
-            <Home />
-            {/* </div> */}
-        </div>
-    );
+import Auth from "./components/Auth/Auth";
+class App extends Component {
+    render() {
+        return (
+            <React.Fragment>
+                <main className="container">
+                    <Switch>
+                        <Route path="/auth" component={Auth} />
+                        <Route path="/home" component={Home} />
+                        <Redirect from="/" to="/auth" />
+                    </Switch>
+                </main>
+            </React.Fragment>
+        );
+    }
 }
 
 export default App;
