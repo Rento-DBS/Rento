@@ -31,7 +31,10 @@ const Login = (props) => {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> ad7b7e1a65c87f231746fb9a85695d0c3baac6be
     // const [errors, setErrors] = useState({});
 
     // const schema = {
@@ -90,7 +93,10 @@ const Login = (props) => {
     // const doSubmit = async () => {
 
     // };
+<<<<<<< HEAD
 >>>>>>> added features to karan branch
+=======
+>>>>>>> ad7b7e1a65c87f231746fb9a85695d0c3baac6be
     return (
         <form className={styles.container} onSubmit={handleSubmit}>
             <h1 className={styles.heading}>Login</h1>
