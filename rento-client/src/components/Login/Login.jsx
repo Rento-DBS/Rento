@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Button, TextField, withStyles } from "@material-ui/core/";
 import styles from "./Login.module.css";
+import { Link } from "react-router-dom";
 // import Joi from "joi";
 import auth from "../../services/authService";
 // import { Redirect } from "react-router-dom";
@@ -101,7 +102,9 @@ const Login = (props) => {
                 label="Password"
                 variant="outlined"
             />
-            <Button className={styles.button}>Login</Button>
+            <Link to="/home" style={{ textDecoration: "none" }}>
+                <Button className={styles.button}>Login</Button>
+            </Link>
         </form>
     );
 };

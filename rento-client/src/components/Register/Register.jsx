@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Button, TextField, withStyles } from "@material-ui/core/";
+import { Link } from "react-router-dom";
 import styles from "./Register.module.css";
 import * as userService from "../../services/userService";
 import auth from "../../services/authService";
@@ -74,9 +75,11 @@ function Register() {
                 label="Password"
                 variant="outlined"
             />
-            <Button className={styles.button} variant="outlined">
-                Register
-            </Button>
+            <Link to="/home" style={{ textDecoration: "none" }}>
+                <Button className={styles.button} variant="outlined">
+                    Register
+                </Button>
+            </Link>
         </form>
     );
 }

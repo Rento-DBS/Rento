@@ -1,0 +1,42 @@
+.container {
+    width: 250px;
+    height: 350px;
+    background-color: rgb(233, 233, 233);
+    border-radius: 10px;
+    font-family: "Raleway", sans-serif;
+    font-size: 13px;
+    padding: 30px;
+    position: absolute;
+    margin: 200px;
+}
+
+.image {
+    box-sizing: border-box;
+    width: 250px;
+    height: 175px;
+    border-radius: 10px;
+    /* position: relative; */
+    /* left: 50%; */
+}
+.attributes {
+    float: left;
+}
+.price {
+    font-family: "Lato", sans-serif;
+    float: right;
+    font-size: 25px;
+    color: rgb(76, 40, 233);
+    margin-top: 15px;
+}
+
+.button {
+    margin: 20px !important;
+    width: 100px !important;
+    color: white !important;
+    background: rgb(28, 194, 16) !important;
+    box-shadow: 3px 4px 4px rgba(138, 138, 138, 0.25) !important;
+    border-radius: 5px !important;
+    position: absolute !important;
+    left: 30% !important;
+    bottom: 0 !important;
+}
