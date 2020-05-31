@@ -6,8 +6,6 @@
     font-family: "Raleway", sans-serif;
     font-size: 13px;
     padding: 30px;
-    position: absolute;
-    margin: 200px;
 }
 
 .image {
@@ -15,8 +13,6 @@
     width: 250px;
     height: 175px;
     border-radius: 10px;
-    /* position: relative; */
-    /* left: 50%; */
 }
 .attributes {
     float: left;
@@ -30,13 +26,10 @@
 }
 
 .button {
-    margin: 20px !important;
     width: 100px !important;
     color: white !important;
     background: rgb(28, 194, 16) !important;
     box-shadow: 3px 4px 4px rgba(138, 138, 138, 0.25) !important;
     border-radius: 5px !important;
-    position: absolute !important;
-    left: 30% !important;
-    bottom: 0 !important;
+    margin-right: 100px;
 }
