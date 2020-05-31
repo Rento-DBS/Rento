@@ -15,7 +15,7 @@ const Home = () => {
                 Book your ride on{" "}
                 <span className={styles.subheading}>Rento</span> !
             </h1>
-            <Link to="/select-car" style={{ textDecoration: "none" }}>
+            <Link to="/booking" style={{ textDecoration: "none" }}>
                 <Button className={styles.button}>
                     Book Now!
                     <ArrowForwardIosRoundedIcon

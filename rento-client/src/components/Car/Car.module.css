@@ -16,13 +16,17 @@
 }
 .attributes {
     float: left;
+    line-height: 40px;
+    position: relative;
+    top: 10px;
 }
 .price {
     font-family: "Lato", sans-serif;
     float: right;
     font-size: 25px;
     color: rgb(76, 40, 233);
-    margin-top: 15px;
+    position: relative;
+    top: 45px;
 }
 
 .button {
@@ -31,5 +35,7 @@
     background: rgb(28, 194, 16) !important;
     box-shadow: 3px 4px 4px rgba(138, 138, 138, 0.25) !important;
     border-radius: 5px !important;
-    margin-right: 100px;
+    position: relative !important;
+    right: 30px;
+    top: 90px;
 }

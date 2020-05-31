@@ -9,7 +9,7 @@ const SelectCar = () => {
         setCars(carsArray);
     }, [cars]);
     return (
-        <div className={styles.car}>
+        <div className={styles.container}>
             {cars.map((car) => (
                 <Car
                     key={car.id}
