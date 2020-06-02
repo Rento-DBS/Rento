@@ -1,4 +1,4 @@
-const msssql = require("mssql");
+const mssql = require("mssql");
 
 // const config = {
 //     user: "SA",
@@ -20,7 +20,7 @@ const config = {
     },
 };
 
-const pool = new msssql.ConnectionPool(config);
+const pool = new mssql.ConnectionPool(config);
 
 pool.connect().then(() => {
     console.log("Connected to database..");
@@ -48,13 +48,9 @@ async function executeQuery(query) {
 
 module.exports = { executeQuery };
 
-
-
-
-
 //azure
 //rentoadmin
 //Rento280101
 
-//connnection string 
+//connnection string
 //Server=tcp:rento.database.windows.net,1433;Initial Catalog=rento;Persist Security Info=False;User ID=rentoadmin;Password={your_password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
