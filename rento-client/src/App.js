@@ -4,6 +4,7 @@ import Home from "./components/Home/Home";
 import Auth from "./components/Auth/Auth";
 import Booking from "./components/Booking/Booking";
 import styles from "./App.module.css";
+import Checkout from "./components/Checkout/Checkout";
 class App extends Component {
     render() {
         return (
@@ -13,6 +14,7 @@ class App extends Component {
                         <Route path="/auth" component={Auth} />
                         <Route path="/home" component={Home} />
                         <Route path="/booking" component={Booking} />
+                        <Route path="/checkout" component={Checkout} />
                         <Redirect from="/" to="/auth" />
                     </Switch>
                 </main>
