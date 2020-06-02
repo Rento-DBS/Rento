@@ -5,7 +5,17 @@ import Checkbox from "@material-ui/core/Checkbox";
 import Slider from "@material-ui/core/Slider";
 import TextField from "@material-ui/core/TextField";
 
-const Filter = () => {
+const Filter = ({
+    isPetrol,
+    isDiesel,
+    isFuel,
+    isNoFuel,
+    isAutomatic,
+    isManual,
+    maxPrice,
+    seats,
+    pickup,
+}) => {
     return (
         <div className={styles.container}>
             <div className={styles.heading}>
@@ -17,37 +27,46 @@ const Filter = () => {
                     label="Petrol"
                 />
                 <FormControlLabel
-                    control={<Checkbox color="primary" name="petrol" />}
+                    control={<Checkbox color="primary" name="diesel" />}
                     label="Diesel"
                 />
                 <FormControlLabel
-                    control={<Checkbox color="primary" name="petrol" />}
+                    control={<Checkbox color="primary" name="fuel" />}
                     label="Fuel"
                 />
                 <FormControlLabel
-                    control={<Checkbox color="primary" name="petrol" />}
+                    control={<Checkbox color="primary" name="noFuel" />}
                     label="No Fuel"
                 />
                 <FormControlLabel
-                    control={<Checkbox color="primary" name="petrol" />}
+                    control={<Checkbox color="primary" name="automatic" />}
                     label="Automatic"
                 />
                 <FormControlLabel
-                    control={<Checkbox color="primary" name="petrol" />}
+                    control={<Checkbox color="primary" name="manual" />}
                     label="Manual"
                 />
-                <Slider
-                    defaultValue={30}
-                    // getAriaValueText={valuetext}
-                    aria-labelledby="discrete-slider"
-                    valueLabelDisplay="auto"
-                    step={100}
-                    marks
-                    min={1000}
-                    max={3000}
-                />
-                <TextField id="standard-basic" label="Seats" />
-                <TextField id="standard-basic" label="Pickup" />
+                <h3
+                    style={{
+                        fontFamily: "Roboto",
+                        fontWeight: "normal",
+                        fontSize: "20px",
+                    }}
+                >
+                    Maximum Price: {}
+                    <Slider
+                        id="slider"
+                        defaultValue={2500}
+                        // getAriaValueText={valuetext}
+                        aria-labelledby="discrete-slider"
+                        valueLabelDisplay="auto"
+                        step={100}
+                        min={1000}
+                        max={2500}
+                    />
+                </h3>
+                <TextField id="seats" label="Seats" />
+                <TextField id="pickup" label="Pickup" />
             </div>
         </div>
     );
