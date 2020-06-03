@@ -8,11 +8,16 @@ import CardDetails from "../CardDetails/CardDetails";
 import { user } from "./User";
 import { bookings } from "./Bookings";
 import { card } from "./Card";
+import GoHome from "../GoHome/GoHome";
+
 const MyAccount = () => {
     return (
         <div>
             <div>
                 <ProfileTab />
+            </div>
+            <div className={styles.goHome}>
+                <GoHome />
             </div>
             {window.location.pathname === "/my-account/profile" && (
                 <div className={styles.profile}>
