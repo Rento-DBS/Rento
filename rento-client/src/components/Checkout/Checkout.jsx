@@ -3,6 +3,7 @@ import Car from "../Car/Car";
 import { Link } from "react-router-dom";
 import { Button } from "@material-ui/core";
 import styles from "./Checkout.module.css";
+import { carsArray } from "../SelectCar/Cars";
 
 const Checkout = () => {
     const [chargePerKm, setChargePerKm] = useState(0);
@@ -25,7 +26,12 @@ const Checkout = () => {
                     Booked{" "}
                     <span style={{ color: "rgb(28, 194, 16)" }}>Car</span>
                 </h2>
-                <Car pickup={pickup} dropOff={dropoff} duration={duration} />
+                <Car
+                    imageUrl={carsArray[0].imageUrl}
+                    pickup={pickup}
+                    dropOff={dropoff}
+                    duration={duration}
+                />
             </div>
             <div className={styles.vl}></div>
             <div className={styles.details}>

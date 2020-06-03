@@ -1,13 +1,21 @@
 import React from "react";
-import carImage from "../../img/car.jpg";
 import styles from "./Car.module.css";
 import { Link } from "react-router-dom";
 import { Button } from "@material-ui/core";
-const Car = ({ url, fuel, gear, price, seats, pickup, dropOff, duration }) => {
+const Car = ({
+    imageUrl,
+    fuel,
+    gear,
+    price,
+    seats,
+    pickup,
+    dropOff,
+    duration,
+}) => {
     return (
         <div className={styles.container}>
             {/* <img className={styles.image} src={require(`${url}`)} alt="car" />             */}
-            <img className={styles.image} src={carImage} alt="car" />
+            <img className={styles.image} src={imageUrl} alt="car" />
             <div className={styles.details}>
                 <div className={styles.attributes}>
                     {fuel && <h2>Fuel: {fuel}</h2>}

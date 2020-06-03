@@ -1,0 +1,24 @@
+.container {
+    width: fit-content;
+    height: fit-content;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 60px;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px rgba(218, 218, 218, 0.25);
+}
+
+.profilePicture img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.details {
+    font-family: "Lato", sans-serif;
+    font-size: 28px;
+}

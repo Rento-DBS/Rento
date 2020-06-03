@@ -4,13 +4,13 @@ import { Button } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import PersonIcon from "@material-ui/icons/Person";
 import ArrowForwardIosRoundedIcon from "@material-ui/icons/ArrowForwardIosRounded";
+import ShowProfile from "../ShowProfile/ShowProfile";
+import { user } from "../MyAccount/User";
 
 const Home = () => {
     return (
         <div className={styles.container}>
-            <div className={styles.person}>
-                <PersonIcon className={styles.personIcon} />
-            </div>
+            <ShowProfile user={user} />
             <h1 className={styles.heading}>
                 Book your ride on{" "}
                 <span className={styles.subheading}>Rento</span> !

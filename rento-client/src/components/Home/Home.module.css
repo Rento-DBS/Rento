@@ -29,14 +29,6 @@
     cursor: pointer;
 }
 
-.personIcon {
-    height: 50px !important;
-    width: 50px !important;
-    display: inline-block !important;
-    position: relative !important;
-    top: 15% !important;
-}
-
 .button {
     width: 300px !important;
     height: 75px !important;

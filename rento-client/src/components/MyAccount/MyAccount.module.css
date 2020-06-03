@@ -1,0 +1,17 @@
+.profile {
+    position: absolute;
+    right: 20%;
+    top: 5%;
+}
+
+.pastBookings {
+    position: absolute;
+    right: 210px;
+    margin-top: 30px;
+}
+
+.cardDetails {
+    position: absolute;
+    right: 20%;
+    top: 20%;
+}
