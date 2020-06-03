@@ -1,7 +1,7 @@
 const cars = [
     {
         id: 1,
-        url: "../../img/car.jpg",
+        imageUrl: require("../../img/car.jpg"),
         fuel: "Petrol",
         gear: "Automatic",
         price: 2000,
@@ -9,7 +9,7 @@ const cars = [
     },
     {
         id: 2,
-        url: "../../img/car1.jpg",
+        imageUrl: require("../../img/car1.jpg"),
         fuel: "Diesel",
         gear: "Manual",
         price: 1800,
@@ -17,47 +17,41 @@ const cars = [
     },
     {
         id: 3,
-        url: "../../img/car2.jpg",
+        imageUrl: require("../../img/car2.jpg"),
         fuel: "Petrol",
         gear: "Automatic",
         price: 1700,
         seats: 4,
     },
     {
-        id: 4,
-        url: "../../img/car.jpg",
-        fuel: "Petrol",
-        gear: "Automatic",
-        price: 2000,
-        seats: 6,
-    },
-    {
         id: 5,
-        url: "../../img/car1.jpg",
+        imageUrl: require("../../img/car1.jpg"),
         fuel: "Diesel",
         gear: "Manual",
         price: 1800,
         seats: 4,
     },
     {
-        id: 6,
-        url: "../../img/car2.jpg",
-        fuel: "Petrol",
-        gear: "Automatic",
-        price: 1700,
-        seats: 4,
-    },
-    {
-        id: 7,
-        url: "../../img/car.jpg",
+        id: 4,
+        imageUrl: require("../../img/car.jpg"),
         fuel: "Petrol",
         gear: "Automatic",
         price: 2000,
         seats: 6,
     },
+
+    {
+        id: 6,
+        imageUrl: require("../../img/car2.jpg"),
+        fuel: "Petrol",
+        gear: "Automatic",
+        price: 1700,
+        seats: 4,
+    },
+
     {
         id: 8,
-        url: "../../img/car1.jpg",
+        imageUrl: require("../../img/car1.jpg"),
         fuel: "Diesel",
         gear: "Manual",
         price: 1800,
@@ -65,11 +59,19 @@ const cars = [
     },
     {
         id: 9,
-        url: "../../img/car2.jpg",
+        imageUrl: require("../../img/car2.jpg"),
         fuel: "Petrol",
         gear: "Automatic",
         price: 1700,
         seats: 4,
+    },
+    {
+        id: 7,
+        imageUrl: require("../../img/car.jpg"),
+        fuel: "Petrol",
+        gear: "Automatic",
+        price: 2000,
+        seats: 6,
     },
 ];
 

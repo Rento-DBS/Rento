@@ -13,7 +13,7 @@ const SelectCar = () => {
             {cars.map((car) => (
                 <Car
                     key={car.id}
-                    url={car.url}
+                    imageUrl={car.imageUrl}
                     fuel={car.fuel}
                     gear={car.gear}
                     price={car.price}

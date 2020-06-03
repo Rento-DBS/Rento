@@ -17,9 +17,9 @@ app.get("/dd", async (req, res) => {
     }
 });
 
-app.get("/",(req,res) => {
-    res.send("Im working")
-})
+app.get("/", (req, res) => {
+    res.send("Im working");
+});
 const port = process.env.PORT || 3900;
 app.listen(port, () => {
     console.log(`Connected to port ${port}`);

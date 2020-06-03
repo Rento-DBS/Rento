@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.tick {
+    position: absolute;
+    left: 8%;
+    top: 15%;
+}
+
+.vl {
+    width: 1px;
+    background-color: rgb(185, 185, 185);
+    position: absolute;
+    left: 45%;
+    height: 600px;
+    top: 10%;
+}
+
+.details {
+    position: absolute;
+    right: 20%;
+    top: 20%;
+    font-family: "Lato", sans-serif;
+    font-size: 32px;
+    line-height: 80px;
+    letter-spacing: 1px;
+}
+.heading {
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+.button {
+    margin: 20px !important;
+    width: 180px !important;
+    color: rgb(28, 194, 16) !important;
+    box-shadow: 3px 4px 4px rgba(185, 185, 185, 0.15) !important;
+    border-radius: 5px !important;
+}

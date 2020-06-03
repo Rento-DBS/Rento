@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.radioButton {
+    position: absolute;
+    top: 40%;
+}
+.button {
+    width: 150px !important;
+    color: white !important;
+    background: rgb(28, 194, 16) !important;
+    box-shadow: 3px 4px 4px rgba(138, 138, 138, 0.25) !important;
+    border-radius: 5px !important;
+    position: absolute !important;
+    top: 55% !important;
+    left: 45% !important;
+}

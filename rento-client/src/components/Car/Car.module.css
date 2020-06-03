@@ -14,19 +14,30 @@
     height: 175px;
     border-radius: 10px;
 }
+.details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .attributes {
-    float: left;
+    /* float: left; */
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    width: fit-content;
     line-height: 40px;
     position: relative;
     top: 10px;
 }
 .price {
     font-family: "Lato", sans-serif;
-    float: right;
+    /* float: right; */
     font-size: 25px;
     color: rgb(76, 40, 233);
     position: relative;
+    height: fit-content;
     top: 45px;
+    right: 0;
 }
 
 .button {
@@ -36,6 +47,6 @@
     box-shadow: 3px 4px 4px rgba(138, 138, 138, 0.25) !important;
     border-radius: 5px !important;
     position: relative !important;
-    right: 30px;
-    top: 90px;
+    left: 80px !important;
+    top: 15px !important;
 }
