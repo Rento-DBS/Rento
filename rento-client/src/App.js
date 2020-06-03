@@ -6,6 +6,8 @@ import Booking from "./components/Booking/Booking";
 import styles from "./App.module.css";
 import Checkout from "./components/Checkout/Checkout";
 import MyAccount from "./components/MyAccount/MyAccount";
+import Payment from "./components/Payment/Payment";
+import SuccessPage from "./components/SuccessPage/SuccessPage";
 class App extends Component {
     render() {
         return (
@@ -17,6 +19,8 @@ class App extends Component {
                         <Route path="/booking" component={Booking} />
                         <Route path="/checkout" component={Checkout} />
                         <Route path="/my-account" component={MyAccount} />
+                        <Route path="/payment" component={Payment} />
+                        <Route path="/success-page" component={SuccessPage} />
                         {/* temp */}
                         <Redirect from="/" to="/auth" />
                     </Switch>
