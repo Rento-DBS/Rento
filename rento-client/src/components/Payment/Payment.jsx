@@ -71,6 +71,7 @@ function StyledRadio(props) {
 const Payment = () => {
     return (
         <div className={styles.container}>
+            <div className={styles.heading}>Select your card</div>
             <div className={styles.radioButton}>
                 <FormControlLabel
                     value="card"
