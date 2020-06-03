@@ -27,3 +27,8 @@
     margin-top: 50px;
     width: 300px;
 }
+
+.checkboxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
