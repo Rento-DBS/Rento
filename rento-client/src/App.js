@@ -8,6 +8,7 @@ import Checkout from "./components/Checkout/Checkout";
 import MyAccount from "./components/MyAccount/MyAccount";
 import Payment from "./components/Payment/Payment";
 import SuccessPage from "./components/SuccessPage/SuccessPage";
+import UserDetail from "./components/UserDetail/UserDetail";
 class App extends Component {
     render() {
         return (
@@ -21,7 +22,7 @@ class App extends Component {
                         <Route path="/my-account" component={MyAccount} />
                         <Route path="/payment" component={Payment} />
                         <Route path="/success-page" component={SuccessPage} />
-                        {/* temp */}
+                        <Route path="/user-details" component={UserDetail} />
                         <Redirect from="/" to="/auth" />
                     </Switch>
                 </main>

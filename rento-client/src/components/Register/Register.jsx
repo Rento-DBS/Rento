@@ -75,7 +75,7 @@ function Register() {
                 label="Password"
                 variant="outlined"
             />
-            <Link to="/home" style={{ textDecoration: "none" }}>
+            <Link to="/user-details" style={{ textDecoration: "none" }}>
                 <Button className={styles.button} variant="outlined">
                     Register
                 </Button>
