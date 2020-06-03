@@ -57,35 +57,68 @@ const Filter = ({
                 <h2>Filter Options</h2>
             </div>
             <div className={styles.options}>
-                <FormControlLabel
-                    control={<Checkbox color="primary" name="petrol" />}
-                    label="Petrol"
-                />
-                <FormControlLabel
-                    control={<Checkbox color="primary" name="diesel" />}
-                    label="Diesel"
-                />
-                <FormControlLabel
-                    control={<Checkbox color="primary" name="fuel" />}
-                    label="Fuel"
-                />
-                <FormControlLabel
-                    control={<Checkbox color="primary" name="noFuel" />}
-                    label="No Fuel"
-                />
-                <FormControlLabel
-                    control={<Checkbox color="primary" name="automatic" />}
-                    label="Automatic"
-                />
-                <FormControlLabel
-                    control={<Checkbox color="primary" name="manual" />}
-                    label="Manual"
-                />
+                <div className={styles.checkboxes}>
+                    <FormControlLabel
+                        control={
+                            <Checkbox
+                                style={{ color: "rgb(61, 28, 247)" }}
+                                name="petrol"
+                            />
+                        }
+                        label="Petrol"
+                    />
+                    <FormControlLabel
+                        control={
+                            <Checkbox
+                                style={{ color: "rgb(61, 28, 247)" }}
+                                name="diesel"
+                            />
+                        }
+                        label="Diesel"
+                    />
+                    <FormControlLabel
+                        control={
+                            <Checkbox
+                                style={{ color: "rgb(61, 28, 247)" }}
+                                name="fuel"
+                            />
+                        }
+                        label="Fuel"
+                    />
+                    <FormControlLabel
+                        control={
+                            <Checkbox
+                                style={{ color: "rgb(61, 28, 247)" }}
+                                name="noFuel"
+                            />
+                        }
+                        label="No Fuel"
+                    />
+                    <FormControlLabel
+                        control={
+                            <Checkbox
+                                style={{ color: "rgb(61, 28, 247)" }}
+                                name="automatic"
+                            />
+                        }
+                        label="Automatic"
+                    />
+                    <FormControlLabel
+                        control={
+                            <Checkbox
+                                style={{ color: "rgb(61, 28, 247)" }}
+                                name="manual"
+                            />
+                        }
+                        label="Manual"
+                    />
+                </div>
                 <h3
                     style={{
                         fontFamily: "Roboto",
                         fontWeight: "normal",
                         fontSize: "20px",
+                        marginTop: "20px",
                     }}
                 >
                     Maximum Price: {}
