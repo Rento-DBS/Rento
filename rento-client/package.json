@@ -22,7 +22,7 @@
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
-        "deploy-prod": "npm run build && serve -s build",
+        "deploy-prod": "npm run build && yarn global add serve && serve -s build",
         "test": "react-scripts test",
         "eject": "react-scripts eject"
     },
