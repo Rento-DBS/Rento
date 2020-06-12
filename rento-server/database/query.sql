@@ -80,111 +80,111 @@
 --primary key(emailId));
 
 --create table Customer(
-  --  DL varchar(30),
-    --firstName varchar(50),
-    --lastName varchar(50),
-    --phoneNo varchar(20),
-    --emailId varchar(50),
-    --primary key(DL),
-    --foreign key(emailId) references LoginInfo(emailId));
+--  DL varchar(30),
+--firstName varchar(50),
+--lastName varchar(50),
+--phoneNo varchar(20),
+--emailId varchar(50),
+--primary key(DL),
+--foreign key(emailId) references LoginInfo(emailId));
 
 --create table Location(
-  --  locationId varchar(50),
-    --locationName varchar(50),
-    --state varchar(50),
-   -- city varchar(50),
-    --zip varchar(50), 
-    --primary key(locationId));
+--  locationId varchar(50),
+--locationName varchar(50),
+--state varchar(50),
+-- city varchar(50),
+--zip varchar(50), 
+--primary key(locationId));
 
 --create table CarType(
-  --  typeName varchar(50),
-   -- gear varchar(20),
-    --seats int,
-    --lateFeePerHr varchar(20),
-    --extraFuelChargePerLitre varchar(50),
-    --costPerHr varchar(50),
-    --freeDist varchar(50),
-    --primary key(typeName));
+--  typeName varchar(50),
+-- gear varchar(20),
+--seats int,
+--lateFeePerHr varchar(20),
+--extraFuelChargePerLitre varchar(50),
+--costPerHr varchar(50),
+--freeDist varchar(50),
+--primary key(typeName));
 
 --create table Car(
-  --  registrationNumber varchar(50),
-   -- availability tinyint,
-   -- fuelType varchar(50),
-    --locationId varchar(50),
-   -- typeName varchar(50),
-    --primary key(registrationNumber),
-   -- foreign key(locationId) references Location(locationId),
-    --foreign key(typeName) references CarType(typeName));
+--  registrationNumber varchar(50),
+-- availability tinyint,
+-- fuelType varchar(50),
+--locationId varchar(50),
+-- typeName varchar(50),
+--primary key(registrationNumber),
+-- foreign key(locationId) references Location(locationId),
+--foreign key(typeName) references CarType(typeName));
 
 --create table Booking(
 --    bookingId varchar(50),
- ---   DL varchar(30),
- --   registrationNumber varchar(50),
-  --  pickUpLocation varchar(50),
-  --  dropOffLocation varchar(50),
-  --  pickUpDateTime varchar(50) NOT NULL,
-    --dropOffDateTime varchar(50) NOT NULL,
-   -- bookingAmount varchar(20),
-   -- primary key(bookingId),
-    --foreign key(DL) references Customer(DL),
-    --foreign key(registrationNumber) references Car(registrationNumber),
-    --foreign key(pickUpLocation) references Location(locationId), 
-    --foreign key(dropOffLocation) references Location(locationId));
+---   DL varchar(30),
+--   registrationNumber varchar(50),
+--  pickUpLocation varchar(50),
+--  dropOffLocation varchar(50),
+--  pickUpDateTime varchar(50) NOT NULL,
+--dropOffDateTime varchar(50) NOT NULL,
+-- bookingAmount varchar(20),
+-- primary key(bookingId),
+--foreign key(DL) references Customer(DL),
+--foreign key(registrationNumber) references Car(registrationNumber),
+--foreign key(pickUpLocation) references Location(locationId), 
+--foreign key(dropOffLocation) references Location(locationId));
 
 --create table CardDetails(
-  --  cardNumber varchar(50),
-   -- DL varchar(50),
-   -- cardType varchar(50),
-    --expiry date NOT NULL,
-    --cvv varchar(20) NOT NULL,
-    --primary key(cardNumber), 
+--  cardNumber varchar(50),
+-- DL varchar(50),
+-- cardType varchar(50),
+--expiry date NOT NULL,
+--cvv varchar(20) NOT NULL,
+--primary key(cardNumber), 
 --    foreign key(DL) references Customer(DL));
 
 --create table OfferDetails(
- --   offerId varchar(50),
-  --  code varchar(50),
-   -- discountPercent int,
-    --primary key(offerId));
+--   offerId varchar(50),
+--  code varchar(50),
+-- discountPercent int,
+--primary key(offerId));
 
 --create table Payment(
- --   paymentId varchar(50),
- --   bookingId varchar(50),
-  --  finalAmount float,
-   -- offerId varchar(50),
-    --cardNumber varchar(50),
-   -- primary key(paymentId), 
-   -- foreign key(bookingId) references Booking(bookingId),
-    --foreign key(offerId) references OfferDetails(offerId), 
-    --foreign key(cardNumber) references CardDetails(cardNumber));
+--   paymentId varchar(50),
+--   bookingId varchar(50),
+--  finalAmount float,
+-- offerId varchar(50),
+--cardNumber varchar(50),
+-- primary key(paymentId), 
+-- foreign key(bookingId) references Booking(bookingId),
+--foreign key(offerId) references OfferDetails(offerId), 
+--foreign key(cardNumber) references CardDetails(cardNumber));
 
 --create table AdditionalDriverDetails(
- --   additionalDL varchar(50),
-  --  bookingId varchar(50),
-  --  firstName varchar(50),
-  ---  lastName varchar(50), 
-  --  primary key(additionalDL),
-  --  foreign key(bookingId) references Booking(bookingId));
+--   additionalDL varchar(50),
+--  bookingId varchar(50),
+--  firstName varchar(50),
+---  lastName varchar(50), 
+--  primary key(additionalDL),
+--  foreign key(bookingId) references Booking(bookingId));
 
 --create table Return(
- --   bookingCompletionId varchar(50),
- ----   bookingId varchar(50),
-  --  extraDistanceCharge float,
-  --  extraFuelCharge float,
-  --  lateFee float,
-   -- totalFineAmount float,
-  --  primary key(bookingCompletionId),
-   -- foreign key(bookingId) references Booking(bookingId));
+--   bookingCompletionId varchar(50),
+----   bookingId varchar(50),
+--  extraDistanceCharge float,
+--  extraFuelCharge float,
+--  lateFee float,
+-- totalFineAmount float,
+--  primary key(bookingCompletionId),
+-- foreign key(bookingId) references Booking(bookingId));
 -- Insert rows into table 'login'
 INSERT INTO LoginInfo
-( -- columns to insert data into
- [emailId], [password]
-)
+  ( -- columns to insert data into
+  [emailId], [password]
+  )
 VALUES
-( -- first row: values for the columns in the list above
- 'vivekbhat935@gmail.com', 'xP3@rcYKm!7u'
+  ( -- first row: values for the columns in the list above
+    'vivekbhat935@gmail.com', 'xP3@rcYKm!7u'
 ),
-( -- second row: values for the columns in the list above
- 'rupam123@gmail.com', '43iipchkmv'
+  ( -- second row: values for the columns in the list above
+    'rupam123@gmail.com', '43iipchkmv'
 )
 -- add more rows here
 GO

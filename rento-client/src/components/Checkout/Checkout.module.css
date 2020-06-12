@@ -5,6 +5,7 @@
 
 .details {
     font-family: "Lato", sans-serif;
+    font-size: 28px;
     line-height: 100px;
     position: absolute;
     right: 350px;
@@ -47,4 +48,10 @@
     background: rgb(28, 194, 16) !important;
     box-shadow: 3px 4px 4px rgba(138, 138, 138, 0.25) !important;
     border-radius: 5px !important;
+}
+.promoCode {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
 }

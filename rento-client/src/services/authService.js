@@ -3,14 +3,14 @@ import http from "./httpService";
 import jwtDecode from "jwt-decode";
 
 // const apiEndPoint = apiUrl + "/auth";
-// const apiEndPoint = "/auth";
+const apiEndPoint = "/auth";
 const tokenKey = "token";
 
 http.setJwt(getJwt());
 
-export function login(email, password) {
-    // const { data: jwt } = await http.post(apiEndPoint, { email, password });
-    const jwt = { username: email, password: password };
+export async function login(email, password) {
+    let { data: jwt } = await http.post(apiEndPoint, { email, password });
+    jwt = { username: email, password: password };
     localStorage.setItem(tokenKey, jwt);
 }
 
