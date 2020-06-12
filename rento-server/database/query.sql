@@ -68,8 +68,6 @@
 -- -- add more rows here
 -- GO
 
-insert into Car values (6, 'mangalore', 3000, 'bentley', 'KA19v2091'); 
-insert into Car values (132, 'mangalore', 3000, 'bentley', 'KA19v2091'); 
-
-
+-- insert into Car values (6, 'mangalore', 3000, 'bentley', 'KA19v2091'); 
+-- insert into Car values (132, 'mangalore', 3000, 'bentley', 'KA19v2091'); 
 

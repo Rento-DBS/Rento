@@ -3,7 +3,7 @@ import axios from "axios";
 // import logger from "./logService";
 
 // THIS VALUE WILL CHANGE DEPENDING IN WHAT MODE WE ARE BUILDING THE APPLICATION
-// axios.defaults.baseURL = process.env.REACT_APP_API_URL;
+axios.defaults.baseURL = process.env.REACT_APP_API_URL;
 
 //when we get a response with an error this function will be called first then the control is passed to the catch block
 // uncomment this once sentry/logService is completed
