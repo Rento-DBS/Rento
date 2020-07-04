@@ -23,7 +23,7 @@ const config = {
 const pool = new mssql.ConnectionPool(config);
 
 pool.connect().then(() => {
-    console.log("Connected to database..");
+    console.log("Connected to Azure Database.");
 });
 
 async function executeQuery(query) {

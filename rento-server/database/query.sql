@@ -175,16 +175,22 @@
 --  primary key(bookingCompletionId),
 -- foreign key(bookingId) references Booking(bookingId));
 -- Insert rows into table 'login'
-INSERT INTO LoginInfo
-  ( -- columns to insert data into
-  [emailId], [password]
-  )
-VALUES
-  ( -- first row: values for the columns in the list above
-    'vivekbhat935@gmail.com', 'xP3@rcYKm!7u'
-),
-  ( -- second row: values for the columns in the list above
-    'rupam123@gmail.com', '43iipchkmv'
-)
+-- INSERT INTO LoginInfo
+--   ( -- columns to insert data into
+--   [emailId], [password]
+--   )
+-- VALUES
+--   ( -- first row: values for the columns in the list above
+--     'vivekbhat935@gmail.com', 'xP3@rcYKm!7u'
+-- ),
+--   ( -- second row: values for the columns in the list above
+--     'rupam123@gmail.com', '43iipchkmv'
+-- )
 -- add more rows here
-GO
+-- Add a new column 'CarImage' to table 'Car' in schema 'dbo'
+-- ALTER TABLE dbo.Car
+--   ADD CarImage IMAGE NULL
+-- GO
+SELECT *
+FROM [Car] INNER JOIN [CarType] ON [Car].typeName = [CarType].typeName
+  INNER JOIN [Location] ON [Car].locationId = [Location].locationId
